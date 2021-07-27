@@ -20,7 +20,7 @@ public class Light {
         // State of the light
         boolean isLightOn = true; // Light is off
         // isLightOn = true  -- > invert the value true ---> false (!ture)
-        if ( !true){
+        if ( !isLightOn){
             System.out.println("Turn On Light");
             System.out.println("Light Turned On");
         }
