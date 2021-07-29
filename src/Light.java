@@ -1,5 +1,24 @@
 public class Light {
 
+    /**
+     * Components of a class
+     * 1. Constructor
+     * 2. Method
+     * 3. Main Method (Not mandatory)
+     * 4. Object
+     * 5. Variables
+     * */
+
+    /**
+     *
+     *  Default constructor
+     *  Does not have any return type
+     *  Name of the constructor is same as Class Name
+     *
+     * */
+    public Light(){
+        System.out.println("I am default constructor, I can help you to create an object");
+    }
 
     public static void main(String[] args) {
 
@@ -7,31 +26,35 @@ public class Light {
         // Using new keyword we are invoking Light constructor to create a Light Object
         Light myTableLight = new Light(); // Hidden(Default) Constructor in a class looks like ClassName()
         // Yea we have object, can we turn on or off?
-        myTableLight.onOffLight();
+        myTableLight.onOffLight("on");
+
     }
 
-    public void onOffLight(){
+    public void onOffLight(String expectedLightState){
         /**
          * if (condition){
          *     // If the condition is true execute anything inside the block if not skip
          *  }
          *
          * */
+        // Declaration of a variable a
+        int a;
+        a = 2;
+        int b = a +2;
+
         // State of the light
-        boolean isLightOn = true; // Light is off
+        //boolean isLightOn = lightState; // true
+
+        String desiredLightState = expectedLightState;
         // isLightOn = true  -- > invert the value true ---> false (!ture)
-        if ( !true){
+        if ( desiredLightState == "on"){
             System.out.println("Turn On Light");
             System.out.println("Light Turned On");
         }
-        else if ( isLightOn){
+        else if ( desiredLightState == "off"){
             System.out.println("Turn Off Light");
             System.out.println("Light Turned Off");
         }
-        else {
-            System.out.println("Light is On");
-        }
-
     }
 
     public void turnOnLight(){
