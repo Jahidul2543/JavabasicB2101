@@ -47,11 +47,8 @@ public class Light {
 
         String desiredLightState = expectedLightState;
         // isLightOn = true  -- > invert the value true ---> false (!ture)
-<<<<<<< HEAD
+
         if ( desiredLightState == "on"){
-=======
-        if ( !isLightOn){
->>>>>>> f5b7af0af57168db0fe150a20df8b1fa6906a05b
             System.out.println("Turn On Light");
             System.out.println("Light Turned On");
         }
