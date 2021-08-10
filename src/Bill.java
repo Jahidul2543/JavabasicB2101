@@ -11,5 +11,4 @@ public class Bill {
         Money utilityBill = atm.getMoney("John", "John1234", myAtmCard, 100 );
         return "Thank you for the payment. Your bill for the month of July has been paid.";
     }
-
 }
